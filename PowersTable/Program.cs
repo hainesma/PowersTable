@@ -11,21 +11,17 @@ namespace PowersTable
             while (goOn == true)
             {
 
-                int number = GetInteger();
+             int number = GetInteger();
 
+             Console.WriteLine("Number \t \t Squared \t Cubed");
+             Console.WriteLine("====== \t \t ====== \t ======");
+
+            for(int i = 0; i <= number; i++)
                 {
-
-                    // Powers Table
-                    Console.WriteLine("Number \t \t Squared \t Cubed");
-                    Console.WriteLine("====== \t \t ====== \t ======");
-
-                    for (int i = 1; i <= number; i++)
-                    {
-                        Console.WriteLine($"{i} \t \t {i * i} \t \t {i * i * i}");
-                    }
+                    Console.WriteLine($"{i} \t \t {i * i} \t \t {i * i * i}");
                 }
-
-                goOn = GetContinue();
+                
+             goOn = GetContinue();
             }
         }
 
@@ -43,8 +39,8 @@ namespace PowersTable
             if (number < 1)
             {
                 Console.WriteLine("Your input is not suitable.");
-                number = GetInteger();
-                return ValidateInteger(number);
+                return GetInteger();
+                
             }
             else
             {
