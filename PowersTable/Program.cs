@@ -16,7 +16,7 @@ namespace PowersTable
              Console.WriteLine("Number \t \t Squared \t Cubed");
              Console.WriteLine("====== \t \t ====== \t ======");
 
-            for(int i = 0; i <= number; i++)
+            for(int i = 1; i <= number; i++)
                 {
                     Console.WriteLine($"{i} \t \t {i * i} \t \t {i * i * i}");
                 }
